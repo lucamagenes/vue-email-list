@@ -10,9 +10,9 @@
 
         <div id="root">
 
-            <ul>
+            <ul v-if="users.length == 10">
                 <li v-for="user in users">
-                    {{user.userMail}}
+                    {{user}}
                 </li>
             </ul>
 
